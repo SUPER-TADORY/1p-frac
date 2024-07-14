@@ -1,0 +1,35 @@
+# @package _group_
+arch:
+  _target_: timm.models.create_model
+  model_name: resnet50
+  pretrained: False
+
+
+optim:
+  _target_: timm.optim.create_optimizer_v2
+  optimizer_name: adamw
+  learning_rate: 5.0e-4
+  weight_decay: 0.05
+  eps: 1.0e-6
+
+
+scheduler:
+  _target_: timm.scheduler.create_scheduler
+  args:
+    epochs: ${epochs}
+    sched: cosine
+    lr_cycle_mul: 1.0
+    min_lr: 1.0e-5
+    decay_rate: 0.1
+    warmup_lr: 1.0e-6
+    warmup_epochs: 5
+    warmup_steps: 10000
+    lr_cycle_limit: 1
+    seed: ${seed}
+    cooldown_epochs: 10
+    step_per_epoch: True
+
+
+scaler:
+  clip_grad: 1.0
+  clip_mode: norm

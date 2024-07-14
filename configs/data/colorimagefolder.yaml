@@ -1,0 +1,69 @@
+# @package _group_
+baseinfo:
+  name: ???
+  train_imgs: ???
+  val_imgs: -1
+  num_classes: ???
+
+
+trainset:
+  _target_: torchvision.datasets.ImageFolder
+  root: ???
+
+
+valset:
+  _target_: torchvision.datasets.ImageFolder
+  root: null
+
+
+transform:
+  _target_: timm.data.create_transform
+  input_size: 224
+  scale :
+    - 0.08
+    - 1.0
+  ratio :
+    - 0.75
+    - 1.3333
+  no_aug: False
+  hflip: 0.5
+  vflip: 0.0
+  color_jitter: 0.4
+  auto_augment: rand-m9-mstd0.5-inc1
+  interpolation: bicubic
+  mean:
+    - 0.485
+    - 0.456
+    - 0.406
+  std:
+    - 0.229
+    - 0.224
+    - 0.225
+  re_prob: 0.25
+  re_mode: pixel
+  re_count: 1
+
+
+loader:
+  _target_: torch.utils.data.DataLoader
+  batch_size: 64
+  num_workers: 10
+  pin_memory: True
+
+
+sampler:
+  _target_: torch.utils.data.distributed.DistributedSampler
+  seed: ${seed}
+
+
+mixup:
+  _target_: timm.data.Mixup
+  mixup_alpha: 0.8
+  cutmix_alpha: 1.0
+  prob: 1.0
+  switch_prob: 0.5
+  mode: 'batch'
+  label_smoothing: 0.1
+
+gaus_filter:
+  use: False

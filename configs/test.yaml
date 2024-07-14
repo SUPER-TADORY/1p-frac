@@ -1,0 +1,18 @@
+seed: 42
+ckpt: ???
+output_dir: ???
+
+
+defaults:
+  - data: ???
+  - model: ???
+
+
+dist:
+  backend: nccl
+  local_rank: 0
+
+
+hydra:
+  run:
+    dir: ${output_dir}
