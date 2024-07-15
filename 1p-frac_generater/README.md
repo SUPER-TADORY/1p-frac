@@ -1,4 +1,4 @@
-# 3D-OFDB (One-instance FractalDataBase)
+# 1p-frac (1-parameter Fractal as Data)
 
 <!-- <p align="center"> <img src="../3D-OFDB1k.png" /> <p align="center">These images are the full set of images rendered from a single 3D-OFDB-1k viewpoint.</p> -->
 
