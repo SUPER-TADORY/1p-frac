@@ -17,26 +17,13 @@ If you want to use 1p-frac (1k or 21k version), please download them from the li
 |:---:|
 | Download link : [[1p-frac (1k version)](https://drive.google.com/file/d/1tVsOJlju5ATXj8GT0Qt9TzdBopuxGm6D/view?usp=share_link)]  [[1p-frac (21k version)](https://drive.google.com/file/d/1LV5_hBrDCB4_WyhSh65NA7TvinXMuWRh/view?usp=share_link)]   
 
-## 2D-OFDB ([README](2d-ofdb-generator/README.md))
-If you want to generate data for 2D-OFDB, please refer to the 2D-OFDB README and execute the commands below.
+## 1p-frac ([README](1p-frac_generater/README.md))
+If you want to generate data for 1p-frac, please refer to the 1p-frac README and execute the commands below.
 
 ```
-$ cd 2d-ofdb-generator
-$ bash exe_parallel.sh
+$ cd 1p-frac_generater
+$ bash generate_1p-frac.sh
 ```
-
-## 3D-OFDB ([README](3d-ofdb-generator/README.md))
-
-If you want to generate data for 3D-OFDB, please refer to the 3D-OFDB README and execute the commands below.
-
-```
-$ cd 3d-ofdb-generator
-$ bash 3d-ofdb_render.sh
-```
-Note: You will need to set up your environment.
-To set up the environment, check REDOME in 3d-ofdb.
-
-
 
 ## Requirements
 This section introduces the environment required to pre-train the generated 2D/3D-OFDB or fine-tune the pre-trained model.
@@ -122,13 +109,14 @@ Please see the script and code files for details on each arguments.
 
 ### Pre-trained models
 
-Our pre-trained models are available in this [[Link](https://drive.google.com/drive/folders/1GUlRQwRPw0qx56L1Voez6RulYXGLgmuw?usp=share_link)].
+Pre-trained models will be available soon.
+<!-- Our pre-trained models are available in this [[Link](https://drive.google.com/drive/folders/1GUlRQwRPw0qx56L1Voez6RulYXGLgmuw?usp=share_link)]. -->
 <!-- Our pre-trained models are available in this Link -->
 
-We have mainly prepared three different pre-trained models. 
-These pre-trained models are ViT-Tiny/Base (patch size of 16, input size of 224) pre-trained on 2D/3D-OFDB-1k/21k and Swin-Base (patch size of 7, window size of 7, input size of 224) pre-trained on 2D/3D-OFDB-21k.
+<!-- We have mainly prepared three different pre-trained models. 
+These pre-trained models are ViT-Tiny/Base (patch size of 16, input size of 224) pre-trained on 2D/3D-OFDB-1k/21k and Swin-Base (patch size of 7, window size of 7, input size of 224) pre-trained on 2D/3D-OFDB-21k. -->
 
-```misc
+<!-- ```misc
 pretrain_deit_tiny_2d-ofdb1k_patch_lr1.0e-3_epochs80000_bs256-last.pth #2D-OFDB-1k pre-training for ViT-T
 
 pretrain_deit_tiny_3d-ofdb1k_patch_lr1.0e-3_epochs80000_bs256-last.pth #2D-OFDB-1k pre-training for ViT-T
@@ -139,7 +127,7 @@ pretrain_deit_tiny_3d-ofdb21k_edgar_lr5.0e-4_epochs15238_bs1024_amp-last.pth.tar
 
 
 Other pre-trained models will be available on another day
-```
+``` -->
 
 ## Fine-tuning
 
