@@ -8,12 +8,12 @@ The repository is based on the paper by Ryo Nakamura*, Ryu Tadokoro*, Ryosuke Ya
 [[Dataset](https://drive.google.com/drive/folders/1KZfmu1OJKQZhwFKgiJx2mx6VFqq-pFTB?usp=share_link)] 
 [[Supp](https://drive.google.com/file/d/1x7eV8jvZOrpdrQFP4tgfiH7HS9wIg53d/view?usp=share_link)]
 
-<p align="center"> <img src="main_image.png" width="90%"/> <p align="center">ComparisonofImageNet-1k,FractalDBand1p-frac(ours).1p-fracconsists of only a single fractal for pre-training. With 1p-frac, neural networks learn to clas- sify perturbations applied to the fractal. In our study “single” means a very narrow distribution over parameters that leads to images that are roughly equivalent from a human visual perspective. While the shape differences of perturbed images can be indistinguishable to humans, models pre-trained on 1p-frac achieve comparable per- formance with those pre-trained on ImageNet-1k or FractalDB.</p>
+<p align="center"> <img src="figure/main_image.png" width="90%"/> <p align="center">ComparisonofImageNet-1k,FractalDBand1p-frac(ours).1p-fracconsists of only a single fractal for pre-training. With 1p-frac, neural networks learn to clas- sify perturbations applied to the fractal. In our study “single” means a very narrow distribution over parameters that leads to images that are roughly equivalent from a human visual perspective. While the shape differences of perturbed images can be indistinguishable to humans, models pre-trained on 1p-frac achieve comparable per- formance with those pre-trained on ImageNet-1k or FractalDB.</p>
 
 ## 1-parameter Fractal as Data (1p-frac)
 If you want to use 1p-frac (1k or 21k version), please download them from the link below. We provide files that compress png files into zip for both 1p-frac.
 
-| ![alt text](1p-frac.png)  |
+| ![alt text](figure/1p-frac.png)  |
 |:---:|
 | Download link : [[1p-frac (1k version)](https://drive.google.com/file/d/1tVsOJlju5ATXj8GT0Qt9TzdBopuxGm6D/view?usp=share_link)]  [[1p-frac (21k version)](https://drive.google.com/file/d/1LV5_hBrDCB4_WyhSh65NA7TvinXMuWRh/view?usp=share_link)]   
 
