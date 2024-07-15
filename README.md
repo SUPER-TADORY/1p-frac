@@ -1,21 +1,21 @@
-# Pre-training Vision Transformers with Very Limited Synthesized Images (ICCV'23)
+# Scaling Backwards: Minimal Synthetic Pre-training? (ECCV'24)
 
 ## Summary
 This repository contains the construction, pre-training, and fine-tuning of the 2D/3D-OFDB dataset in Python/PyTorch. <br>
-The repository is based on the paper by Ryo Nakamura, Hirokatsu Kataoka, Sora Takashima, Edgar Josafat Martinez Noriega, Rio Yokota, and Nakamasa Inoue, "Pre-training Vision Transformers with Very Limited Synthesized Images", presented at the IEEE/CVF International Conference on Computer Vision (ICCV) 2023.
+The repository is based on the paper by Ryo Nakamura*, Ryu Tadokoro*, Ryosuke Yamada, Yuki M. Asano, Iro Laina, Christian Rupprech, Nakamasa Inoue, Rio Yokota and Hirokatsu Kataoka (These authors contributed equally), "Scaling Backwards: Minimal Synthetic Pre-training?", presented at the European Conference on Computer Vision (ECCV) 2024.
 <!-- [[Project](https://masora1030.github.io/Visual-Atoms-Pre-training-Vision-Transformers-with-Sinusoidal-Waves/)]  -->
 [[arXiv](https://arxiv.org/abs/2307.14710)] 
 [[Dataset](https://drive.google.com/drive/folders/1KZfmu1OJKQZhwFKgiJx2mx6VFqq-pFTB?usp=share_link)] 
 [[Supp](https://drive.google.com/file/d/1x7eV8jvZOrpdrQFP4tgfiH7HS9wIg53d/view?usp=share_link)]
 
-<p align="center"> <img src="main_image.png" width="90%"/> <p align="center">Fine-tuning accuracy on CIFAR-100 for the number of images for pre-training. The line plot for ImageNet-1k indicates the results when using random sampling to reduce the data for pre-training. (b) One-instance fractal database (OFDB) consists of only 1,000 images in total. The figure shows the category representation. OFDB contains a single instance per category.</p>
+<p align="center"> <img src="main_image.png" width="90%"/> <p align="center">ComparisonofImageNet-1k,FractalDBand1p-frac(ours).1p-fracconsists of only a single fractal for pre-training. With 1p-frac, neural networks learn to clas- sify perturbations applied to the fractal. In our study “single” means a very narrow distribution over parameters that leads to images that are roughly equivalent from a human visual perspective. While the shape differences of perturbed images can be indistinguishable to humans, models pre-trained on 1p-frac achieve comparable per- formance with those pre-trained on ImageNet-1k or FractalDB.</p>
 
-## One-instance FractalDataBase(OFDB)
-If you wish to use 2D/3D-OFDB-1k or 21k, please download them from the link below. We provide files that compress png files into zip for both 2D-OFDB-1k and 21k. Similarly, we provide compressed files for 3D-OFDB-1k and 21k. The 3D-OFDB offers a dataset rendered from the 12 views that provide the highest pre-training effect. Hence, the directory contains images from 12 viewpoints. When training, you should code to load one image per directory. The generation code for 3D-OFDB is stored in the 3d-ofdb-generator directory. Please refer to its README for more details.
+## 1-parameter Fractal as Data (1p-frac)
+If you want to use 1p-frac (1k or 21k version), please download them from the link below. We provide files that compress png files into zip for both 1p-frac.
 
-| ![alt text](OFDB1k.png) | ![alt text](3D-OFDB1k.png) |
-|:---:|:---:|
-| Download link : [[2D-OFDB-1k](https://drive.google.com/file/d/1tVsOJlju5ATXj8GT0Qt9TzdBopuxGm6D/view?usp=share_link)]  [[2D-OFDB-21k](https://drive.google.com/file/d/1LV5_hBrDCB4_WyhSh65NA7TvinXMuWRh/view?usp=share_link)]   |Download link : [[3D-OFDB-1k](https://drive.google.com/file/d/1or-9gijxh-CGTAY1c5rcEtL4wFMZTU75/view?usp=share_link)] [[3D-OFDB-21k](https://drive.google.com/file/d/153r8jHceplIY9T-rzxJZLqAmyzqV5TiO/view?usp=share_link)] |
+| ![alt text](1p-frac.png)  |
+|:---:|
+| Download link : [[1p-frac (1k version)](https://drive.google.com/file/d/1tVsOJlju5ATXj8GT0Qt9TzdBopuxGm6D/view?usp=share_link)]  [[1p-frac (21k version)](https://drive.google.com/file/d/1LV5_hBrDCB4_WyhSh65NA7TvinXMuWRh/view?usp=share_link)]   
 
 ## 2D-OFDB ([README](2d-ofdb-generator/README.md))
 If you want to generate data for 2D-OFDB, please refer to the 2D-OFDB README and execute the commands below.
@@ -62,9 +62,9 @@ $ pip install -r requirements.txt
 
 ## Pre-training
 
-We used almost the same scripts as in [Kataoka_2022_CVPR](https://github.com/masora1030/CVPR2022-Pretrained-ViT-PyTorch) for our pre-training.
+We used almost the same scripts as in [Kataoka_2022_CVPR](https://github.com/masora1030/CVPR2022-Pretrained-ViT-PyTorch) and [Nakamura_20223_ICCV](https://github.com/ryoo-nakamura/OFDB) for our pre-training.
 
-Run the shell script ```pre-traning.sh```, you can pre-train with 2D or 3D-OFDB.
+Run the shell script ```pre-traning.sh```, you can pre-train with 1p-frac.
 
 Basically, you can run the python script ```pretrain.py``` with the following command.
 
@@ -200,11 +200,11 @@ Please see the script and code files for details on each arguments.
 ## Citation
 If you use our work in your research, please cite our paper:
 ```bibtex
-@InProceedings{nakamura2023ofdb,
-    title={Pre-training Vision Transformers with Very Limited Synthesized Images},
-    author={Ryo Nakamura, Hirokatsu Kataoka, Sora Takashima, Edgar Josafat MARTINEZ-NORIEGA, Rio Yokota and Nakamasa Inoue},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision (ICCV)},
-    year={2023},
+@InProceedings{xxxxxx,
+    title={Scaling Backwards: Minimal Synthetic Pre-training?},
+    author={Ryo Nakamura, Ryu Tadokoro, Ryosuke Yamada, Yuki M. Asano, Iro Laina, Christian Rupprech, Nakamasa Inoue, Rio Yokota and Hirokatsu Kataoka},
+    booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+    year={2024},
 }
 ``` 
 
@@ -213,3 +213,6 @@ If you use our work in your research, please cite our paper:
 The authors affiliated in National Institute of Advanced Industrial Science and Technology (AIST) and Tokyo Institute of Technology (TITech) are not responsible for the reproduction, duplication, copy, sale, trade, resell or exploitation for any commercial purposes, of any portion of the images and any portion of derived the data. In no event will we be also liable for any other damages resulting from this data or any derived data.
 
 [def]: #summary
+
+## Acknowledgements
+In this repository is based on [2D/3D-OFDB](https://github.com/ryoo-nakamura/OFDB).
