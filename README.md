@@ -4,9 +4,9 @@
 This repository contains the construction, pre-training, and fine-tuning of the 2D/3D-OFDB dataset in Python/PyTorch. <br>
 The repository is based on the paper by Ryo Nakamura*, Ryu Tadokoro*, Ryosuke Yamada, Yuki M. Asano, Iro Laina, Christian Rupprech, Nakamasa Inoue, Rio Yokota and Hirokatsu Kataoka (These authors contributed equally), "Scaling Backwards: Minimal Synthetic Pre-training?", presented at the European Conference on Computer Vision (ECCV) 2024.
 <!-- [[Project](https://masora1030.github.io/Visual-Atoms-Pre-training-Vision-Transformers-with-Sinusoidal-Waves/)]  -->
-[[arXiv](https://arxiv.org/abs/2307.14710)] 
-[[Dataset](https://drive.google.com/drive/folders/1KZfmu1OJKQZhwFKgiJx2mx6VFqq-pFTB?usp=share_link)] 
-[[Supp](https://drive.google.com/file/d/1x7eV8jvZOrpdrQFP4tgfiH7HS9wIg53d/view?usp=share_link)]
+[[arXiv]()] 
+[[Dataset]([https://drive.google.com/drive/folders/1KZfmu1OJKQZhwFKgiJx2mx6VFqq-pFTB?usp=share_link](https://drive.google.com/drive/folders/1iJSiDaqsoWWP5s7Z5BvI1XypXSOPXV1R))] 
+[[Supp]()]
 
 <p align="center"> <img src="figure/main_image.png" width="90%"/> <p align="center">ComparisonofImageNet-1k,FractalDBand1p-frac(ours).1p-fracconsists of only a single fractal for pre-training. With 1p-frac, neural networks learn to clas- sify perturbations applied to the fractal. In our study “single” means a very narrow distribution over parameters that leads to images that are roughly equivalent from a human visual perspective. While the shape differences of perturbed images can be indistinguishable to humans, models pre-trained on 1p-frac achieve comparable per- formance with those pre-trained on ImageNet-1k or FractalDB.</p>
 
@@ -15,7 +15,7 @@ If you want to use 1p-frac (1k or 21k version), please download them from the li
 
 | ![alt text](figure/1p-frac.png)  |
 |:---:|
-| Download link : [[1p-frac (1k version)](https://drive.google.com/file/d/1tVsOJlju5ATXj8GT0Qt9TzdBopuxGm6D/view?usp=share_link)]  [[1p-frac (21k version)](https://drive.google.com/file/d/1LV5_hBrDCB4_WyhSh65NA7TvinXMuWRh/view?usp=share_link)]   
+| Download link : [[1p-frac (1k version)](https://drive.google.com/file/d/1HwuYJ6AHy88T9GmMeWDsCopqCccC9QGV/view?usp=drive_link)]  [[1p-frac (21k version)](https://drive.google.com/file/d/1fR4j3_1KZ6lkXE-4mOI4KyrG0u8wkFva/view?usp=drive_link)]   
 
 ## 1p-frac ([README](1p-frac_generater/README.md))
 If you want to generate data for 1p-frac, please refer to the 1p-frac README and execute the commands below.
