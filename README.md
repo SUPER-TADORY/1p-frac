@@ -5,7 +5,7 @@ This repository contains the construction, pre-training, and fine-tuning of the 
 The repository is based on the paper by Ryo Nakamura*, Ryu Tadokoro*, Ryosuke Yamada, Yuki M. Asano, Iro Laina, Christian Rupprech, Nakamasa Inoue, Rio Yokota and Hirokatsu Kataoka (These authors contributed equally), "Scaling Backwards: Minimal Synthetic Pre-training?", presented at the European Conference on Computer Vision (ECCV) 2024.
 <!-- [[Project](https://masora1030.github.io/Visual-Atoms-Pre-training-Vision-Transformers-with-Sinusoidal-Waves/)]  -->
 [[arXiv]()] 
-[[Dataset]([https://drive.google.com/drive/folders/1KZfmu1OJKQZhwFKgiJx2mx6VFqq-pFTB?usp=share_link](https://drive.google.com/drive/folders/1iJSiDaqsoWWP5s7Z5BvI1XypXSOPXV1R))] 
+[[Dataset](https://drive.google.com/drive/folders/1iJSiDaqsoWWP5s7Z5BvI1XypXSOPXV1R?usp=drive_link)] 
 [[Supp]()]
 
 <p align="center"> <img src="figure/main_image.png" width="90%"/> <p align="center">ComparisonofImageNet-1k,FractalDBand1p-frac(ours).1p-fracconsists of only a single fractal for pre-training. With 1p-frac, neural networks learn to clas- sify perturbations applied to the fractal. In our study “single” means a very narrow distribution over parameters that leads to images that are roughly equivalent from a human visual perspective. While the shape differences of perturbed images can be indistinguishable to humans, models pre-trained on 1p-frac achieve comparable per- formance with those pre-trained on ImageNet-1k or FractalDB.</p>
