@@ -2,7 +2,7 @@
 
 ## Summary
 This repository contains the construction, pre-training, and fine-tuning of the 2D/3D-OFDB dataset in Python/PyTorch. <br>
-The repository is based on the paper by Ryo Nakamura*, Ryu Tadokoro*, Ryosuke Yamada, Yuki M. Asano, Iro Laina, Christian Rupprech, Nakamasa Inoue, Rio Yokota and Hirokatsu Kataoka (These authors contributed equally), "Scaling Backwards: Minimal Synthetic Pre-training?", presented at the European Conference on Computer Vision (ECCV) 2024.
+The repository is based on the paper by Ryo Nakamura*, Ryu Tadokoro* (* indicates equal contribution), Ryosuke Yamada, Yuki M. Asano, Iro Laina, Christian Rupprech, Nakamasa Inoue, Rio Yokota and Hirokatsu Kataoka, "Scaling Backwards: Minimal Synthetic Pre-training?", presented at the European Conference on Computer Vision (ECCV) 2024.
 <!-- [[Project](https://masora1030.github.io/Visual-Atoms-Pre-training-Vision-Transformers-with-Sinusoidal-Waves/)]  -->
 [[arXiv]()] 
 [[Dataset](https://drive.google.com/drive/folders/1iJSiDaqsoWWP5s7Z5BvI1XypXSOPXV1R?usp=drive_link)] 
