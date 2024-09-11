@@ -1,7 +1,7 @@
 # 1p-frac (1-parameter Fractal as Data)
 
 This repository contains the code for generating data with 1p-frac. In 1p-frac, we control the distribution of shape variations using the parameter Δ. Even with very small shape variations, such as Δ=0.1, it achieves pre-training effects close to real data.
-<p align="center"> <img src="../figure/fig_liep-1" width="90%"/> </p>
+<p align="center"> <img src="../figure/fig_liep-1.png" width="90%"/> </p>
 
 ## Requirements
 
