@@ -8,12 +8,12 @@ The repository is based on the paper by Ryo Nakamura*, Ryu Tadokoro* (* indicate
 [[Dataset](https://drive.google.com/drive/folders/1iJSiDaqsoWWP5s7Z5BvI1XypXSOPXV1R?usp=drive_link)] 
 [[Supp]()]
 
-<p align="center"> <img src="figure/main_image.png" width="100%"/> </p> Comparison of ImageNet-1k, FractalDB and 1p-frac (ours). 1p-frac consists of only a single fractal for pre-training. With 1p-frac, neural networks learn to classify perturbations applied to the fractal. In our study “single” means a very narrow distribution over parameters that leads to images that are roughly equivalent from a human visual perspective. While the shape differences of perturbed images can be indistinguishable to humans, models pre-trained on 1p-frac achieve comparable performance with those pre-trained on ImageNet-1k or FractalDB.
+<p align="center"> <img src="_figure/main_image.png" width="100%"/> </p> Comparison of ImageNet-1k, FractalDB and 1p-frac (ours). 1p-frac consists of only a single fractal for pre-training. With 1p-frac, neural networks learn to classify perturbations applied to the fractal. In our study “single” means a very narrow distribution over parameters that leads to images that are roughly equivalent from a human visual perspective. While the shape differences of perturbed images can be indistinguishable to humans, models pre-trained on 1p-frac achieve comparable performance with those pre-trained on ImageNet-1k or FractalDB.
 
 ## 1-parameter Fractal as Data (1p-frac)
 If you want to use 1p-frac (1k or 21k version), please download them from the link below. We provide files that compress png files into zip for both 1p-frac.
 
-| ![alt text](figure/1p-frac.png)  |
+| ![alt text](_figure/1p-frac.png)  |
 |:---:|
 | Download link : [[1p-frac (1k version)](https://drive.google.com/file/d/1HwuYJ6AHy88T9GmMeWDsCopqCccC9QGV/view?usp=drive_link)]  [[1p-frac (21k version)](https://drive.google.com/file/d/1fR4j3_1KZ6lkXE-4mOI4KyrG0u8wkFva/view?usp=drive_link)]   
 

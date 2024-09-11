@@ -1,0 +1,35 @@
+seed: 42
+epochs: 300
+ckpt: null
+resume: null
+mode: ???
+output_dir: ???
+freez_layer: 1
+freeze: False
+
+
+
+logger:
+  group: debug
+  print_iter_freq: 100
+  save_epoch_freq: 50
+
+
+dist:
+  backend: nccl
+  local_rank: 0
+
+
+defaults:
+  - data: ???
+  - model: ???
+
+
+hydra:
+  run:
+    dir: ${output_dir}
+
+gaus_filter:
+  use: False
+  prob : 0.5
+
