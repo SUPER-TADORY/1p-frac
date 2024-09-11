@@ -16,8 +16,8 @@ wandb_result
 !tests/sample/*.jpg
 .pytest_cache
 !src/imgs/*.png
-!_figure/*.png
-!_figure/*.jpg
+!figure/*.png
+!figure/*.jpg
 *.out
 *.o*
 *txt
