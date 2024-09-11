@@ -10,7 +10,7 @@ freeze: False
 
 
 logger:
-  group: debug
+  group: 1p-frac_finetuning
   print_iter_freq: 100
   save_epoch_freq: 50
 

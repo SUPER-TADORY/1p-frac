@@ -7,7 +7,6 @@ Official repository: https://github.com/catalys1/fractal-pretraining
 from functools import partial
 
 from cv2 import cvtColor, COLOR_HSV2RGB
-import numba
 import numpy as np
 
 
