@@ -3,12 +3,6 @@
 This repository contains the code for generating data with 1p-frac. In 1p-frac, we control the distribution of shape variations using the parameter Δ. Even with very small shape variations, such as Δ=0.1, it achieves pre-training effects close to real data.
 <p align="center"> <img src="../figure/fig_liep-1.png" width="90%"/> </p>
 
-## Requirements
-
-* Python 3.x (tested with 3.7)
-
-The code for generating 1p-frac is the same as that used for pre-training.
-
 ## Running the Code
 To generate 1p-frac data, first specify the hyperparameters in `generate.sh`.
 
