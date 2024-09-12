@@ -23,11 +23,16 @@ Then, run the code as follows:
     bash generate.sh
 
 ## Dataset Sample
-As an example, when adding shape variations in the range of Δ to a given fractal, the distribution of shape changes will look as follows based on Δ:
+As an example, when adding shape variations in the range of Δ to single fractal, the distribution of shape changes will look as follows based on Δ:
 
-| Δ  | Sample num | Pre-trained weights | Dataset link |
-|----|------------|---------------------|--------------|
-| 0.01 | 1k        | TBD                 | TBD          |
-| 0.05 | 1k        | TBD                 | TBD          |
-| 0.1  | 1k        | TBD                 | TBD          |
-| 0.1  | 21k       | TBD                 | TBD          |
+| ![alt text](../figure/delta0.01_1k.png)  |
+|:---:|
+Δ = 0.01
+
+| ![alt text](../figure/delta0.05_1k.png)  |
+|:---:|
+Δ = 0.05
+
+| ![alt text](../figure/delta0.1_1k.png)  |
+|:---:|
+Δ = 0.1
