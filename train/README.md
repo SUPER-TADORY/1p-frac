@@ -65,12 +65,6 @@ When running the script, ensure your dataset is structured as follows:
 
 Please refer to the scripts and code files for details on each argument.
 
-### Pre-trained models
-
-Pre-trained models will be available soon.
-
-<!-- Our pre-trained models are available in this [[Link](https://drive.google.com/drive/folders/1GUlRQwRPw0qx56L1Voez6RulYXGLgmuw?usp=share_link)]. -->
-
 ## Fine-tuning
 
 We used fine-tuning scripts based on [Nakashima_2022_AAAI](https://github.com/nakashima-kodai/FractalDB-Pretrained-ViT-PyTorch).
